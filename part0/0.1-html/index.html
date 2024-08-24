@@ -1,0 +1,85 @@
+<!-- doctype - a required preamble to make sure the document behaves correctly -->
+<!DOCTYPE html>
+<!-- the html element - the root element of the entire page with the lang attribute for setting the primary language of the document -->
+<html lang="en">
+  <!-- the head element - contains machine-readable information(metadata) about the document like character set declaration, viewport element, title, scripts and style sheets -->
+  <head>
+    <!-- the meta element - represents various kinds of metadata like 'charset', 'viewport' and more -->
+    <meta charset="UTF-8" />
+    <!-- character set of the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- to render the page at the width of device -->
+
+    <!-- the title element - represents the document's title or name -->
+    <title>HTML</title>
+
+    <!-- the link element - allows authors to link their document to other resources like style sheets, scripts -->
+    <link href="../0.2-css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+  </head>
+  <!-- the body element - represents the content of the document -->
+  <body>
+    <!-- An HTML element(paragraph) with 3 parts: opening tag, content, closing tag -->
+    <!--
+    <p>My cat is very grumpy</p>
+    -->
+
+    <!-- An HTML element(paragraph) with a non-unique 'class' attribute -->
+    <!--
+    <p class="editor-note">My cat is very grumpy</p>
+    -->
+
+    <!-- Nested HTML elements(paragraph, strong) -->
+    <!--
+    <p>My cat is <strong>very</strong> grumpy</p>
+    -->
+    
+    <h1>Mozilla is cool</h1>
+    
+    <!-- A Void HTML element(image) -->
+    <img
+      src="images/firefox-icon.png"
+      alt="The Firefox logo: a flaming fox surrounding the Earth."
+    />
+
+    <!-- Headings - 4 heading levels -->
+    <!--
+    <h1>My main title</h1>
+    <h2>My top level heading</h2>
+    <h3>My subheading</h3>
+    <h4>My sub-subheading</h4>
+    -->
+
+    <!-- Paragraphs -->
+    <p>At Mozilla, we’re a global community of</p>
+
+    <!-- Lists - 2 types: ordered and unordered -->
+    <ul>
+      <li>technologists</li>
+      <li>thinkers</li>
+      <li>builders</li>
+    </ul>
+
+    <!--
+    <ol>
+      <li>unordered item 1</li>
+      <li>unordered item 2</li>
+      <li>unordered item 3</li>
+    </ol>
+    -->
+
+    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+
+    <p>
+      Read the
+      <!-- Links -->
+      <a href="https://www.mozilla.org/en-US/about/manifesto/">
+          Mozilla Manifesto
+      </a>
+      to learn even more about the values and principles that guide the pursuit of our mission.
+    </p>
+  </body>
+</html>
