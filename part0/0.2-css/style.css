@@ -1,0 +1,77 @@
+/* Anatomy of a CSS ruleset:
+
+    selector {
+        property: value;
+    }
+
+    - selector: the HTML element(s) to which the rule applies
+    - property: the CSS property to set
+    - value: the value to set the property to
+    - declaration: the property-value pair
+
+    Examples:
+        - multiple declarations in one ruleset
+            p {
+                color: red;
+                width: 500px;
+                border: 1px solid black;
+            }
+
+        - multiple selectors in one ruleset
+            p, h1 {
+                color: red;
+            }
+
+        - multiple selectors and declarations in one ruleset
+            p, h1 {
+                color: red;
+                width: 500px;
+                border: 1px solid black;
+            }
+
+    Different types of selectors:
+        - ID selector: #id
+            The element on the page with the specified ID. On a given HTML page, each id value should be unique.
+        - Class selector: .class
+            The element(s) on the page with the specified class. Multiple instances of the same class can appear on a page.
+        - Attribute selector: selector[attribute]
+            The element(s) on the page with the specified attribute.
+        - Psuedo-class selector: selector:pseudo-class
+            The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)
+
+*/
+
+html {
+    font-size: 10px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #00539f;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #ff9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    text-shadow: 3px 3px 1px black;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
