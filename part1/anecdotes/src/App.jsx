@@ -32,8 +32,13 @@ const App = () => {
     setVotes(updatedVotes);
   };
 
-  const handleNextAnecdote = () =>
-    setSelected(Math.floor(Math.random() * anecdotes.length));
+  const handleNextAnecdote = () => {
+    let nextAnecdote;
+    do {
+      nextAnecdote = Math.floor(Math.random() * anecdotes.length);
+    } while (nextAnecdote === selected);
+    setSelected(nextAnecdote);
+  };
 
   const getMostVotedAnecdote = () =>
     getAnectode(votes.indexOf(Math.max(...votes)));
